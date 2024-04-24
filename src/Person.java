@@ -13,7 +13,7 @@ import java.time.LocalDate;
  **/
 
 
-public class Person {
+public abstract class Person {
 
     private String name;
     private String nationality;
@@ -21,6 +21,47 @@ public class Person {
 
     //CONSTRUCTOR
 
-    /** Constructor to create an object of the person class
+    /**
+     * Constructor to create an object of the person class
+     *
+     * @param aName        the name of the person
+     * @param aNationality the nationality of the person
+     * @param aDOB         the date of birth of the person
+     */
 
-}
+    public Person(String aName, String aNationality, LocalDate aDOB) {
+
+        this.name = aName;
+        this.nationality = aNationality;
+        this.DOB = aDOB;
+
+
+    }
+
+    ///GETTER
+    public String getName() {
+        return name;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public LocalDate getDOB() {
+        return DOB;
+
+
+    }
+
+    //SETTER
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+
+    }
+
+
