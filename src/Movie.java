@@ -102,6 +102,18 @@ public class Movie {
 //no setter as it's just get the information and don't want to delete
 
 //list all movies - how to list all movies
+public void ListAllTitles(){
+        for (Movie eachMovie : this.movies)
 
+        {
+            System.out.print("Title" + eachMovie.getTitle() + "Year" + eachMovie.getReleaseDate() + "Director" + eachMovie.getDirectors() + "Actor" + eachMovie.getActors());
+
+            System.out.println(eachMovie);
+        }
+}
+
+{
+
+}
 
 }
